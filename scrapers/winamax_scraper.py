@@ -10,33 +10,33 @@ from pathlib import Path
 
 import aiohttp
 
-OUTPUT_DIR = Path(**file**).parent.parent / Path(‘data’)
+OUTPUT_DIR = Path(**file**).parent.parent / Path('data')
 POLL_INTERVAL_S = 60
 CACHE_MAX_AGE_S = 300
 
 SPORT_IDS = {
-1: ‘Football’,
-2: ‘Tennis’,
-5: ‘Basketball’,
-6: ‘Hockey sur glace’,
-13: ‘Rugby’,
-23: ‘Volleyball’,
-4: ‘Handball’,
+1: 'Football',
+2: 'Tennis',
+5: 'Basketball',
+6: 'Hockey sur glace',
+13: 'Rugby',
+23: 'Volleyball',
+4: 'Handball',
 }
 
 WINAMAX_API_URLS = [
-‘https://www.winamax.fr/paris-sportifs/sports’,
-‘https://www.winamax.fr/appsports/data/1.0/sports/1/competitions’,
-‘https://www.winamax.fr/appsports/data/1.0/matches/live’,
-‘https://www.winamax.fr/appsports/data/1.0/matches/prematch’,
+'https://www.winamax.fr/paris-sportifs/sports',
+'https://www.winamax.fr/appsports/data/1.0/sports/1/competitions',
+'https://www.winamax.fr/appsports/data/1.0/matches/live',
+'https://www.winamax.fr/appsports/data/1.0/matches/prematch',
 ]
 
 HEADERS = {
-‘User-Agent’: ‘Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0.0.0 Safari/537.36’,
-‘Accept’: ‘application/json, text/plain, */*’,
-‘Accept-Language’: ‘fr-FR,fr;q=0.9’,
-‘Referer’: ‘https://www.winamax.fr/paris-sportifs/sports’,
-‘Origin’: ‘https://www.winamax.fr’,
+'User-Agent’: ‘Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0.0.0 Safari/537.36’,
+'Accept’: ‘application/json, text/plain, */*’,
+'Accept-Language’: ‘fr-FR,fr;q=0.9’,
+'Referer’: ‘https://www.winamax.fr/paris-sportifs/sports’,
+'Origin’: ‘https://www.winamax.fr’,
 }
 
 log = logging.getLogger(‘winamax’)
